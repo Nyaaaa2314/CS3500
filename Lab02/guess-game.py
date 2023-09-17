@@ -11,7 +11,15 @@ numguess = 0
 
 while numguess < 10:
 	numguess = numguess + 1
-
+	guess = int(input("What is your guess: "))
+	if guess == x:
+		print ("Congratulations! You found it.")
+		status = True
+		break
+	elif guess < x:
+		print ("Guess higher please.")
+	else:
+		print ("Guess lower please.")
 	# TODO: Please write code that accepts a user guess, and displays the appropriate message.
 	# Use the break statement to break out of the loop if the guess is correct. 
 	# Set the status to True if the user correctly guessed the secret number. 
